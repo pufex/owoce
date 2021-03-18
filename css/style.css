@@ -3,5 +3,181 @@ html, body{
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+    background-color: rgb(240, 240, 240);
 }
+
+a{
+    color: rgb(24, 24, 129);
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+/* COMMON */
+
+.container{
+    display: block;
+    width: 100%;
+}
+
+.container__item{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* END OF COMMON */
+
+/* NAV */
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fdcb6e;
+    z-index: 999;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.nav-bar__link-area{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-bar__link, .nav-bar__link:visited{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.2rem 0.5rem;
+    min-width: 150px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: navy;
+    outline: none;
+
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out, ease-in;
+}
+
+.nav-bar__link:hover{
+    background-color: #ffeaa7;
+    color: rgb(4, 4, 199);
+}
+
+/* END OF NAV */
+
+/* ROW */
+
+.row{
+    padding: 2rem 0;
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.row__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row__item{
+    border-radius: 4px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* END OF ROW */
+
+/* ARTICLES */
+
+.articles{
+    background-color: red;
+    width: 100%;
+}
+
+/* END OF ARTICLES */
+
+/* SIDE-BAR */
+
+.side-bar{
+    min-width: 250px;
+    margin-left: 3rem;
+    background-color: #cdd4d6;
+}
+
+.side-bar__link-area{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.side-bar__header{
+    margin: 0;
+    width: 100%;
+    white-space: normal;
+    box-sizing: border-box;
+    padding: 1rem 0.3rem;
+    text-align: center;
+    cursor: default;
+}
+
+.side-bar__header--black-white{
+    background-color: black;
+    color: white;
+}
+
+.side-bar__header--navy-white{
+    background-color: navy;
+    color: white;
+}
+
+.side-bar__link{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0.1rem;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    background-color: transparent;
+}
+
+.side-bar__link:hover{
+    background-color: #dfe6e9;
+    color: rgb(59, 59, 59);
+}
+
+.side-bar__footer{
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0.5rem;
+}
+
+/* END OF SIDE-BAR */
+
+/* FOOTER */
+
+
+
+/* END OF FOOTER */
