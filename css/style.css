@@ -100,9 +100,7 @@ a:hover{
 }
 
 .row__item{
-    border-radius: 4px;
     overflow-x: hidden;
-    background-color: #dfe6e9;
 }
 
 
@@ -114,15 +112,20 @@ a:hover{
 /* ARTICLES */
 
 .articles{
+    background-color: transparent;
     box-sizing: border-box;
-    border-top: 10px solid #e17055;
     width: 100%;
 }
 
 .article{
+    border-radius: 4px;
+    overflow-x: hidden;
+    border-top: 10px solid #e17055;
     min-height: 500px;
     background-color: transparent;
     font-size: 1.1rem;
+    margin-bottom: 3rem;
+    background-color: #dfe6e9;
 }
 
 .article__container{
@@ -170,7 +173,7 @@ a:hover{
     color: black;
 }
 
-.article__mark-definition{
+.article__mark--definition{
     background-color: transparent;
     color: #d63031;
     font-weight: 600;
@@ -188,7 +191,7 @@ a:hover{
     font-size: 1rem;
 }
 
-.article__mark-list{
+.article__mark--list{
     background-color: transparent;
     color: inherit;
     font-weight: 600;
@@ -263,6 +266,10 @@ a:hover{
     background-image: url(../img/apple.jpg);
 }
 
+.table__orange{
+    background-image: url(../img/orange.jpg);
+}
+
 /* END OF TABLE */
 
 /* SIDE-BAR */
@@ -271,6 +278,8 @@ a:hover{
     min-width: 200px;
     margin-left: 3rem;
     border-bottom: 1rem solid #2d3436;
+    background-color: #dfe6e9;
+    border-radius: 4px;
 }
 
 .side-bar__link-area{
